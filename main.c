@@ -1,5 +1,8 @@
 #include <stdlib.h>
 #include <stdio.h>
+/* I think someone who doesnt know c is going to read this so I'll tell you something real quick, dont change the bit allocation for arrays (like char path[512])
+that is for support for long paths to .iso files, please dont alter it. Also, the etch() function is basically the backend for this tool, so i'd recommend not 
+messing with that unless you know what you're doing. The main() fucntion is basically the CLI, so mess with that if you need to.*/
 char path[512];
 char *blkdevice;
 int main() {
